@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Tip Calculator"
+        self.billAmountTextField.becomeFirstResponder()
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
                 view.addGestureRecognizer(tap)
         self.billAmountTextField.keyboardType = .decimalPad
@@ -29,6 +31,25 @@ class ViewController: UIViewController {
         self.tipSlider.value = (0.15);
     }
 
+    @IBAction func calculateTip_first(_ sender: Any){
+        // get the bill amount from the text field input
+        let bill = Double(billAmountTextField.text!) ?? 0
+        
+        //get total tip by multiplying tip * timPercentage
+        //let tipPercentages = [0.15, 0.18, 0.2]
+        let tip = bill * 0.15
+        let total = bill + tip
+        let people_num = Double(splittingBill.text!) ?? 0
+        let split = total / people_num
+        
+        // update tip amount label
+        tipAmountLabel.text = String(format: "$%.2f", tip)
+        // update total amount
+        totalLabel.text = String (format: "$%.2f", total)
+    
+        amountForEach.text = String(format: "$%.2f", split)
+    }
+    
     @IBAction func calculateTip(_ sender: Any) {
         // get the bill amount from the text field input
         let bill = Double(billAmountTextField.text!) ?? 0
@@ -65,6 +86,4 @@ class ViewController: UIViewController {
     
         amountForEach.text = String(format: "$%.2f", split)
     }
-    
 }
-

@@ -16,6 +16,7 @@
 		B13CF2BD278E644500624C7E /* PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CF2BC278E644500624C7E /* PreworkTests.swift */; };
 		B13CF2C7278E644500624C7E /* PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CF2C6278E644500624C7E /* PreworkUITests.swift */; };
 		B13CF2C9278E644500624C7E /* PreworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CF2C8278E644500624C7E /* PreworkUITestsLaunchTests.swift */; };
+		B17F568627960E45003CBEFA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F568527960E44003CBEFA /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B13CF2C2278E644500624C7E /* PreworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13CF2C6278E644500624C7E /* PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITests.swift; sourceTree = "<group>"; };
 		B13CF2C8278E644500624C7E /* PreworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B17F568527960E44003CBEFA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		B13CF299278E644100624C7E = {
 			isa = PBXGroup;
 			children = (
+				B17F568527960E44003CBEFA /* SettingViewController.swift */,
 				B13CF2A4278E644100624C7E /* Prework */,
 				B13CF2BB278E644500624C7E /* PreworkTests */,
 				B13CF2C5278E644500624C7E /* PreworkUITests */,
@@ -261,6 +264,7 @@
 				B13CF2AA278E644100624C7E /* ViewController.swift in Sources */,
 				B13CF2A6278E644100624C7E /* AppDelegate.swift in Sources */,
 				B13CF2A8278E644100624C7E /* SceneDelegate.swift in Sources */,
+				B17F568627960E45003CBEFA /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
